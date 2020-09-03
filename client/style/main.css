@@ -1,0 +1,21 @@
+body {
+    margin: 0%;
+}
+
+.canvas {
+    background-color: rgb(22, 22, 22);
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+.bttn {
+    width: 10vw;
+    height: 10vw;
+    margin-left: 45vw;
+}
+
+@media (orientation:portrait) {
+    .bttn {height: 40vw; width: 40vw; margin-left: 30vw;}
+}
