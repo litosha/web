@@ -12,17 +12,6 @@ body {
     display: flex;
 }
 
-audio {
-    position: absolute;
-    top: 10vh
-}
-
-.cat {
-    width: 10vw;
-    height: 20vw;
-    margin: 0 2vw 0 2vw;
-}
-
 .bttn {
     width: 12vw;
     height: 3vw;
@@ -72,7 +61,6 @@ p {
 }
 
 @media (orientation:portrait) {
-    .cat {height: 42vw; width: 21vw; margin: 0 0 0 0}
     .bttn {width: 40vw; height: 10vw; margin: 6vw;}
     .bttn:hover {width: 40vw; height: 10vw; margin: 6vw; opacity: 100%;}
     .bttmcop {height: 10vh; top: 90vh}
