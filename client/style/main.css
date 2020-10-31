@@ -3,10 +3,28 @@ body {
     overflow: hidden;
 }
 
+/* HEADER */
+.header {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 6vh;
+    width: 6vh;
+    margin-left: 3vw;
+}
+
+/* MAIN CANVAS */
 .canvas {
     background-color: rgb(22, 22, 22);
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -19,47 +37,95 @@ body {
 }
 
 .bttn:hover {
-    width: 12.4vw;
-    height: 3.1vw;
-    margin: 0.8vw;
     cursor: pointer;
     opacity: 50%;
     transition: all 300ms ease;
 }
 
+.wrap {
+    display: grid;
+    width: 40vw;
+    height: 60vh;
+    margin: auto 5vw auto 2.5vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.stack {
+    display: none;
+}
+
+.lang {
+    width: 5vh;
+}
+
+.cont {
+    display: flex;
+    width: 15vh;
+    height: 5vh;
+    margin: 5vh 0 0 0;
+}
+
+.name {
+    font-size: larger;
+    justify-self: start;
+}
+
+.graph {
+    width: 30vw;
+    margin: 1vh auto 3vh auto;
+}
+
+#link {
+    width: 8vw;
+    height: 2vw;
+    justify-self: end;
+}
+
+.projects {
+    display: none;
+}
+
+p {
+    margin-left: 2vh;
+    color: white;
+    font-family: myriad-pro;
+}
+
+/* BOTTOM COPYTIGHT */
 .bttmcop {
     width: 100vw;
-    height: 5vw;
+    height: 5vh;
     position: absolute;
     bottom: 0;
     background-color: rgb(41, 41, 41);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logocop {
     width: 3vw;
     height: 3vw;
-    margin: auto 1vw auto 39vw;
     opacity: 50%;
 }
 
-p {
+.copy {
     font-family: "myriad-pro";
     width: 18vw;
     color: white;
-    margin: auto 0 auto 0;
+    margin: auto 38vw auto 38vw;
     opacity: 50%;
-    text-align: center;
 }
 
 .favcop {
     display: flex;
     width: 3vw;
     height: 3vw;
-    margin: auto 39vw auto 1vw;
     opacity: 50%;
 }
 
+/* MEDIA CHANGES */
 @media (orientation:portrait) {
     .bttn {width: 40vw; height: 10vw; margin: 6vw;}
     .bttn:hover {width: 40vw; height: 10vw; margin: 6vw; opacity: 100%;}
@@ -69,6 +135,7 @@ p {
     p {display: none;}
 }
 
+/* FONTS */
 @font-face {
     font-family: "myriad-pro"; 
     src: url("/client/fonts/myriad-pro.otf") format("opentype"); 
