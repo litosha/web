@@ -67,7 +67,7 @@ body {
 }
 
 .name {
-    font-size: larger;
+    font-size: large;
     justify-self: start;
 }
 
@@ -89,7 +89,7 @@ body {
 p {
     margin-left: 2vh;
     color: white;
-    font-family: myriad-pro;
+    font-family: Verdana;
 }
 
 /* BOTTOM COPYTIGHT */
@@ -104,41 +104,33 @@ p {
     align-items: center;
 }
 
-.logocop {
-    width: 3vw;
-    height: 3vw;
-    opacity: 50%;
-}
-
 .copy {
-    font-family: "myriad-pro";
+    font-family: Verdana;
     width: 18vw;
     color: white;
     margin: auto 38vw auto 38vw;
     opacity: 50%;
 }
 
-.favcop {
-    display: flex;
-    width: 3vw;
-    height: 3vw;
-    opacity: 50%;
+.underconst {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobilewrap {
+    display: none;
 }
 
 /* MEDIA CHANGES */
 @media (orientation:portrait) {
-    .bttn {width: 40vw; height: 10vw; margin: 6vw;}
+    .bttn {width: 40vw; height: 10vw; margin: 6vw; display: none;}
     .bttn:hover {width: 40vw; height: 10vw; margin: 6vw; opacity: 100%;}
     .bttmcop {height: 10vh; top: 90vh}
-    .logocop {height: 6vh; width: 6vh; margin-left: 5vw;}
-    .favcop {height: 6vh; width: 6vh; margin: auto 5vw auto auto;}
-    p {display: none;}
-}
-
-/* FONTS */
-@font-face {
-    font-family: "myriad-pro"; 
-    src: url("/client/fonts/myriadpro.ttf") format("truetype"); 
-    font-style: normal;
-    font-weight: normal;
+    .copy {font-size: 2.4vw; margin: auto 10vw auto 10vw;}
+    .underconst {display: flex; width: 40vw; margin-left: 5vw;}
+    .mobile {display: flex; text-align: center;}
+    .mobilewrap {display: grid; position: absolute; width: 45vw;}
 }
