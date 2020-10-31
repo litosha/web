@@ -138,7 +138,7 @@ p {
 /* FONTS */
 @font-face {
     font-family: "myriad-pro"; 
-    src: url("/client/fonts/myriad-pro.otf") format("opentype"); 
+    src: url("/client/fonts/myriadpro.ttf") format("truetype"); 
     font-style: normal;
     font-weight: normal;
 }
