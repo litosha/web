@@ -84,11 +84,8 @@ p {
 
 /* MEDIA CHANGES */
 @media (orientation:portrait) {
-    .bttn {width: 40vw; height: 10vw; margin: 6vw; display: none;}
+    .bttn {width: 56vw; height: 14vw; margin: 6vw;}
     .bttn:hover {width: 40vw; height: 10vw; margin: 6vw; opacity: 100%;}
     .bttmcop {height: 10vh; top: 90vh}
     .copy {font-size: 2.4vw; margin: auto 10vw auto 10vw;}
-    .underconst {display: flex; width: 40vw; margin-left: 5vw;}
-    .mobile {display: flex; text-align: center;}
-    .mobilewrap {display: grid; position: absolute; width: 45vw;}
 }
