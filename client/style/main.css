@@ -1,6 +1,6 @@
 body {
     margin: 0%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -14,10 +14,24 @@ body {
     align-items: center;
 }
 
-.logo {
+.fav {
     height: 6vh;
     width: 6vh;
     margin-left: 3vw;
+}
+
+.bttn {
+    width: 12vw;
+    height: 3vw;
+    margin-left: 75vw;
+    transition: all 300ms ease;
+    z-index: 1;
+}
+
+.bttn:hover {
+    cursor: pointer;
+    opacity: 50%;
+    transition: all 300ms ease;
 }
 
 /* MAIN CANVAS */
@@ -28,46 +42,55 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-}
-
-.bttn {
-    width: 16vw;
-    height: 4vw;
-    transition: all 300ms ease;
-}
-
-.bttn:hover {
-    cursor: pointer;
-    opacity: 50%;
-    transition: all 300ms ease;
+    z-index: -1;
 }
 
 .wrap {
-    display: grid;
-    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
     height: 60vh;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    margin: 4vw;
+    background-color: rgb(14, 14, 14);
+    padding-top: 2vw;
 }
 
+.logowrap {
+    display: flex;
+    flex-direction: row;
+}
 
-
-.projects {
-    display: none;
+.logo{
+    width: 8vw;
+    margin: auto 5vw auto 5vw;
 }
 
 p {
-    margin-left: 2vh;
-    color: white;
-    font-family: Verdana;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+    margin: 4vw;
+}
+
+.bttm {
+    width: 100vw;
+    height: 10vh;
+    bottom: -5vh;
+    position: absolute;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* BOTTOM COPYTIGHT */
 .bttmcop {
     width: 100vw;
     height: 5vh;
+    bottom: -100vh;
     position: absolute;
-    bottom: 0;
     background-color: rgb(41, 41, 41);
     display: flex;
     justify-content: center;
