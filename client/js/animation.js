@@ -27,5 +27,8 @@ if (animItems.length > 0) {
             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
-    } 
+    }
+    setTimeout(()=>{
+        animOnScroll();
+    }, 250)
 }

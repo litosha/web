@@ -3,6 +3,26 @@ body {
     overflow-x: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+  
+ /* Track */
+::-webkit-scrollbar-track {
+    background: rgb(14, 14, 14);
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(51, 51, 51); 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(32, 32, 32); 
+}
+
 /* HEADER */
 .header {
     width: 100vw;
@@ -55,6 +75,15 @@ body {
     margin: 4vw;
     background-color: rgb(14, 14, 14);
     padding-top: 2vw;
+
+    transform: translate(500px, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.wrap._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .logowrap {
@@ -67,7 +96,7 @@ body {
     margin: auto 5vw auto 5vw;
 }
 
-p {
+.text {
     color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2vw;
@@ -105,10 +134,33 @@ p {
     opacity: 50%;
 }
 
+.mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signmob {
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: -5vh 10vw auto 10vw;
+}
+
+.underconst {
+    width: 60vw;
+}
+
 /* MEDIA CHANGES */
 @media (orientation:portrait) {
-    .bttn {width: 56vw; height: 14vw; margin: 6vw;}
+    .bttn {width: 44vw; height: 11vw; margin: 6vw;}
     .bttn:hover {width: 40vw; height: 10vw; margin: 6vw; opacity: 100%;}
     .bttmcop {height: 10vh; top: 90vh}
     .copy {font-size: 2.4vw; margin: auto 10vw auto 10vw;}
+    .wrap._active {display: none;}
+    .wrap {display: none;}
+    .body {overflow: hidden;}
+    #sec {display: none;}
+    .bttm {display: none;}
+    .mobile{display: flex;}
 }
