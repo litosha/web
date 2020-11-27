@@ -7,7 +7,7 @@ if (animItems.length > 0) {
             const animItem = animItems[i];
             const animItemHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
-            const animStart = 4;
+            const animStart = 2;
 
             let animItemPoint = window.innerHeight - animItemHeight / animStart;
             if (animItemHeight > window.innerHeight) {
@@ -30,5 +30,35 @@ if (animItems.length > 0) {
     }
     setTimeout(()=>{
         animOnScroll();
-    }, 250)
+    }, 450)
 }
+
+
+/* Анимация header */
+$(function() {
+    let header = $('.header');
+    let headerHeight = header.height(); // вычисляем высоту шапки
+     
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 1) {
+       header.addClass('header_fixed');
+       $('body').css({
+          'paddingTop': headerHeight+'px' // делаем отступ у body, равный высоте шапки
+       });
+      } else {
+       header.removeClass('header_fixed');
+       $('body').css({
+        'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+       })
+      }
+    });
+   });
+
+
+/* Copyright */
+let d = new Date();
+let year = d.getFullYear();
+let flag_stack = false
+let flag_projects = false
+
+document.querySelector(".copy").innerHTML = '&copy; Copyright ' + year + ', Maxim Litovchenko'
